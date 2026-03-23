@@ -4,7 +4,6 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.3-brightgreen.svg)](https://spring.io/projects/spring-boot)
 [![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)
 [![MariaDB](https://img.shields.io/badge/MariaDB-10.6-lightblue.svg)](https://mariadb.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 Веб-приложение для управления доступом, построенное по клиент-серверной архитектуре с использованием **Spring Boot**, **React**, **MariaDB** и **REST API**.  
 Система позволяет управлять пользователями, картами доступа, правами, отслеживать события и формировать отчёты.
@@ -71,20 +70,35 @@
 ## 🗂️ Структура проекта
 
 demo/
+
 ├── src/main/java/com/example/demo
+
 │ ├── controller/
+
 │ ├── service/
+
 │ ├── repository/
+
 │ ├── model/dao/
+
 │ └── DemoApplication.java
+
 ├── src/main/resources/
+
 │ └── application.properties
+
 └── skud_front/
+
 ├── src/
+
 │ ├── components/
+
 │ ├── pages/
+
 │ └── main.tsx
+
 ├── package.json
+
 └── ...
 
 ---
@@ -115,18 +129,16 @@ demo/
 
 ### Документация позволяет:
 
-просматривать все endpoints
-
-отправлять тестовые запросы
-
-проверять структуру JSON-запросов/ответов
+* просматривать все endpoints
+* отправлять тестовые запросы
+* проверять структуру JSON-запросов/ответов
 
 ### Основные сущности
 
-users Пользователи системы
-cards Карты доступа, привязанные к пользователям
-rooms Помещения / зоны доступа
-access_rights Права доступа (какая карта в какое помещение)
-access_events Журнал проходов (время, карта, помещение, результат)
-admin_logs Логи действий администраторов
-controllers Контроллеры на дверях (считыватели карт)
+* users - Пользователи системы
+* cards - Карты доступа, привязанные к пользователям
+* rooms - Помещения / зоны доступа
+* access_rights - Права доступа (какая карта в какое помещение)
+* access_events - Журнал проходов (время, карта, помещение, результат)
+* admin_logs - Логи действий администраторов
+* controllers - Контроллеры на дверях (считыватели карт)
