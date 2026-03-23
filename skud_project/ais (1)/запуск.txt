@@ -1,0 +1,11 @@
+открываем xamp запускаем appache и my sql
+cd "D:\swagger+unitbd\ais (1)\ais\demo"
+дальше запускаем бэк аис демо и .\mvnw spring-boot:run
+запуск тестов вот .\mvnw clean
+>> .\mvnw test "-Dtest=!DatabaseTruncateTest"
+очистить бд вот .\mvnw -Dtest=DatabaseTruncateTest test
+
+& C:/Python313/python.exe "d:/swagger+unitbd/ais (1)/ais/demo/data.py"
+& C:/Python313/python.exe "d:/swagger+unitbd/ais (1)/ais/demo/skud_simulator.py"
+
+npm run dev -- --host
